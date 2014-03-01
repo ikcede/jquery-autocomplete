@@ -15,13 +15,13 @@
 		}
 		
 		var settings = $.extend({
-			data: 				[],
-			target: 			$("#"+id+"-area"),
-			algorithm: 			"string-match", 		// Only supported algo atm
-			sorting: 			"alphabetical",
-			hideTargetIfEmpty:  false,
-			createTarget:		true,
-			displayAllIfEmpty:  false
+			data: 				[],						// Array of words to match against
+			target: 			$("#"+id+"-area"),		// Output div selector
+			algorithm: 			"string-match", 		// Choose which algorithm you want
+			sorting: 			"alphabetical",			// How the output is sorted
+			hideTargetIfEmpty:  false,					// Will hide target if no data recieved
+			createTarget:		true,					// Creates target if not existing
+			displayAllIfEmpty:  false					// Displays target if empty
 		}, settings);
 		
 		el.acdata = settings.data;
