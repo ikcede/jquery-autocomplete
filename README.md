@@ -6,7 +6,7 @@ Optimized for Chrome as usual.
 
 Basic usage:
 
-```
+```html
 <input type='text' id='autocomplete'></input>
 
 <script type='text/javascript'>
@@ -16,7 +16,7 @@ $("#autocomplete").autocomplete();
 
 For additional options:
 
-```
+```javascript
 $("autocomplete").autocomplete({
 	data: 				[],						// Array of words to match against
 	target: 			$("#"+id+"-area"),		// Output div selector
@@ -36,7 +36,7 @@ Only supported sorting right now is alphabetical.
 Target is populated like this: 
 If "autocomplete" is the id of the original element,
 
-```
+```html
 <ul id='autocomplete-aclist'>
 	<li class='autocomplete-acitem'>Matched item</li>
 	<li class='autocomplete-acitem'>Matched item</li>
